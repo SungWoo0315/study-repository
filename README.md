@@ -76,7 +76,7 @@
 
 # 4. 연습
 
-- 예제 (Lists)
+- 예제 (Lists - Unordered)
 
   `* Item 1`
   `* Item 2`
@@ -109,11 +109,59 @@
     - 테스트 2a
     - 테스트 2b
 
+- 예제 (Lists - Ordered)
+
+  `1. Item 1`
+  `1. Item 2`
+  `1. Item 3`
+    `1. Item 3a`
+    `1. Item 3b`
+
+- 실습
+
+1. 테스트 1
+1. 테스트 2
+1. 테스트 3
+  1. 테스트 3a
+  1. 테스트 3b
 
 
+# 5. 연습
+> 마크다운 기타 추가 연습
+
+- 예제 (Blockquotes)
+
+  As Kanye West said:
+
+  `> We're living the future so`
+  `> the present is our past.`
+
+- 실습
+
+  테스트로 작성합니다:
+  
+  > 이것은 테스트로 작성합니다.
+  
+  > 테스트 문장입니다.
 
 
+- 예제 (Tables)
 
+  `First Header | Second Header`
+
+  `------------ | -------------`
+
+  `Content from cell 1 | Content from cell 2`
+
+  `Content in the first column | Content in the second column`
+
+
+- 실습
+
+  테스트1 | 테스트2
+  --------|--------
+  테스트 셀1 | 테스트 셀2
+  테스트 내용 | 테스트 내용
 
 
 
