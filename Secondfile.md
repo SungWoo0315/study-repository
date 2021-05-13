@@ -6,12 +6,12 @@
 
 상대경로:
 
-![](image111.jpg)
+![](image-save/image111.jpg)
 
 
 절대경로:
 
-![](https://github.com/SungWoo0315/study-repository/blob/main/image111.jpg)
+![](https://github.com/SungWoo0315/study-repository/blob/main/image-save/image111.jpg)
 
 
 ---
