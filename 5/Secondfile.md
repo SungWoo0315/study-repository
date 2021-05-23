@@ -6,7 +6,7 @@
 
 상대경로:
 
-![](image-save/image111.jpg)
+![](../image-save/image111.jpg)
 
 
 절대경로:
