@@ -1,9 +1,11 @@
 # study-repository
 
-[KOSMO] 한국소프트웨어 인재개발원 
+[KOSMO] 한국소프트웨어 인재개발원
 
 프로젝트(PBL)중심 스마트웹앱 풀스택개발자 양성과정
 
 공부 복습 저장소 입니다.
 
 [# 5월](https://github.com/SungWoo0315/study-repository/tree/main/5)
+
+[# 6월](https://github.com/SungWoo0315/study-repository/tree/main/6)
