@@ -1,0 +1,28 @@
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+<윈도우.window> 
+[Windows 10 Home] 에서 프로그램 실행 시 
+"이 앱은 사용자 보호를 위해 차단되었습니다." 경고 뜨고 실행 안될때 실행하게 하기
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+-----------------------------------------------------------------------------------
+<1> 아무곳에 gpedit-enabler.bat 파일을 만들고 아래 코드 입력할 것
+-----------------------------------------------------------------------------------
+@echo off 
+@echo "This batch file from MajorGeeks.Com will enable Group Policy Editor (Gpedit.msc) on Windows 10 Home."
+@echo "If this method fails, there are other methods to try at https://tinyurl.com/majorgeeksgpedit"
+pushd "%~dp0" 
+
+dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt 
+dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt 
+
+for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i" 
+pause
+
+-----------------------------------------------------------------------------------
+<2> gpedit-enabler.bat 파일에 마.오클릭 > "관리자 권한으로 실행" 클릭 > 콘솔창이 실행되면서 설치가 진행된다. 
+    즉 Windows 10 Home 에 로컬 보안 정책을 사용토록한다.
+-----------------------------------------------------------------------------------
+<3> 제어판 > 시스템 및 보안 > 관리도구 > 로컬 보안 정책 > 보안설정 > 로컬정책 > 보안옵션
+			>  "사용자 계정 컨트롤: 관리 승인 모드에서 모든 관리자 실행"   더블클릭 
+			>  "사용" 을 "사용 안 함" 으로 변경
+			>   재부팅
+-----------------------------------------------------------------------------------
