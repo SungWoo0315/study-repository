@@ -6,5 +6,5 @@
 
 공부 복습 저장소 입니다.
 
- [# 5월](https://github.com/SungWoo0315/study-repository/tree/main/5) | [# 6월](https://github.com/SungWoo0315/study-repository/tree/main/6)
-|:----:|:----:|
+ [# 5월](https://github.com/SungWoo0315/study-repository/tree/main/5) | [# 6월](https://github.com/SungWoo0315/study-repository/tree/main/6) | [# 7월](https://github.com/SungWoo0315/study-repository/tree/main/7)
+|:----:|:----:|:----:|
