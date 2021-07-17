@@ -1,0 +1,6 @@
+*.py linguist-detectable=false 
+*.cpp linguist-detectable=false 
+*.java linguist-detectable=false
+*.css linguist-detectable=false
+
+*.markdown linguist-detectable=true
