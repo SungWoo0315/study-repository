@@ -10,6 +10,6 @@
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 
 
-<table>
-    <th>5월</th><th>6월</th><th>7월</th><th>8월</th>
+<table style="border-collapse:collapse;" >
+    <th>5월</th><th>6월</th><th>7월</th><th>8월</th><th>9월</th><th>10월</th><th>11월</th>
 </table>
