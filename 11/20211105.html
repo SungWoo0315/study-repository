@@ -11,8 +11,37 @@
 
 <script>
     function get_random_cnt_s( question_cnt, odap_cnt ){
+        
+        var arr = [];
 
-        Math.random()
+        var cnt = 0; 
+
+        for(i=1; i<=question_cnt; i++){
+
+            var xxx = Math.random()*i + 1;
+            var yyy = Math.floor(xxx);
+            
+            // alert(yyy)
+
+            var cnt = 0
+
+            for(var j=1; j<=i; j++){
+
+                if(odap_cnt-yyy > 0){ cnt += odap_cnt-yyy ; }
+            }
+            if(cnt<=8){
+
+                arr.push(yyy);
+            
+            }
+
+
+
+            // arr.push(yyy);
+            // odap_cnt-yyy 
+        }
+        
+        alert(arr);
     }
     document.write(
 
@@ -20,9 +49,6 @@
 
     )
 </script>
-
-
-
 
 
 </head>
