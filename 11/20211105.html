@@ -11,35 +11,90 @@
 
 <script>
     function get_random_cnt_s( question_cnt, odap_cnt ){
+
+
+
+
+
+        // 뱉어야 하는 array 객체  길이: arrleng=10
+        // array객체 내용물 총 합: sam= 8
+
+        var arr=[];
+
+        var limit = odap_cnt;
+
+        var repeat = question_cnt;
+
+        for( i=0 ; i<repeat ; i++ ){
+
+
+            var inner = Math.floor( Math.random()*(odap_cnt+1) );   // 0~8까지 랜덤 정수
+
+
+            // if( limit==0 ){ break; }
+            if( inner <= limit ){ 
+                limit = limit - inner;
+                arr.push(inner);
+            }else{
+                repeat = repeat+1;
+            }
+        }
+
+        alert(arr.length)
+
+
+
+        for( i=0 ; i<question_cnt-arr.length ; i++ ){
+            arr.push(0);
+        }
+       
+
+
         
-        var arr = [];
+        // var arr = [];
 
-        var cnt = 0; 
+        // var limit = odap_cnt; 
 
-        for(i=1; i<=question_cnt; i++){
+        // for(i=1; i<=question_cnt; i++){
 
-            var xxx = Math.random()*i + 1;
-            var yyy = Math.floor(xxx);
+        //     var xxx = Math.random()*(odap_cnt +1);
+        //     var yyy = Math.floor(xxx);
             
-            // alert(yyy)
+        //     alert(yyy)
 
-            var cnt = 0
 
-            for(var j=1; j<=i; j++){
+        //     limit -= yyy
 
-                if(odap_cnt-yyy > 0){ cnt += odap_cnt-yyy ; }
-            }
-            if(cnt<=8){
+        //     limit+=limit
 
-                arr.push(yyy);
+
+        //     if(limit==0 && limit==8){
+        //         arr.push(yyy);
+        //     }
+
+            // while(true){
+
+
+
+            // }
+
+
             
-            }
+            // for(var j=1; j<=i; j++){
+                
+            //     if(odap_cnt-yyy > 0){ cnt += odap_cnt-yyy ; }
+            // }
+            // if(cnt==  8){
+
+            //     arr.push(yyy);
+            
+            // }
 
 
 
             // arr.push(yyy);
             // odap_cnt-yyy 
-        }
+        // }
         
         alert(arr);
     }
