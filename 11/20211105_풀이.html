@@ -11,7 +11,15 @@
 <script>
     function get_random_cnt_s( question_cnt, odap_cnt ){
 
+        if(question_cnt<=0) {
+            alert("문제 개수는 1개 이상이어야 합니다.")
+
+            return ["문제 개수를 다시 지정하세요"];
+        }
+
         var arr = [];
+
+
 
         for( var i=0; i<question_cnt; i++){
             arr.push(0);
@@ -19,10 +27,14 @@
 
         for( var i=0; i<odap_cnt; i++){
             //odap_cnt 이용하여 0~8까지 랜덤 정수
-            var random_idx = Math.floor( Math.random()*(odap_cnt) );   
+            var random_idx = Math.floor( Math.random()*(question_cnt) );   
             
             arr[random_idx] = arr[random_idx] + 1;
+            if( arr[random_idx] == odap_cnt){
+                alert("test")
+            }
         }
+
 
         return arr;
     }
